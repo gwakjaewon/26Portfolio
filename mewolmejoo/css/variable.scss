@@ -1,0 +1,30 @@
+//media size
+$breakpoint-laptopToTablet: 950px;
+$breakpoint-phone: 550px;
+
+@mixin laptopToTablet{
+    @media (max-width: #{$breakpoint-laptopToTablet - 1px}) {
+      @content;
+    }
+}
+@mixin TabletToPhone{
+    @media (max-width : #{$breakpoint-phone - 1px}){
+        @content;
+    }
+}
+//color
+$main-red : #ef4044;
+$right-red: #FF4549;
+$right-blue: #85d7eb;
+$main-gy : #f5f5f5;
+
+//full_size
+@mixin full-size{
+    width: 100%;
+    height: 100vh;
+}
+//flex_center
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+}
